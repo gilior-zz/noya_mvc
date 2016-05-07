@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91242937-11BA-487F-912A-1A43860F0F8D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebSite</RootNamespace>
+    <AssemblyName>WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabases>true</PublishDatabases>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler">
+      <HintPath>..\packages\MiniProfiler.3.1.1.140\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler.EntityFramework6">
+      <HintPath>..\packages\MiniProfiler.EF6.3.0.11\lib\net40\MiniProfiler.EntityFramework6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\GlyphIcon.cshtml" />
+    <Content Include="Content\youmax\youmax_white.min.css" />
+    <Content Include="Images\headers_pic\contact_pic.jpg" />
+    <Content Include="Images\headers_pic\cv_pic.jpg" />
+    <Content Include="Images\headers_pic\head_pic.jpg" />
+    <Content Include="Images\headers_pic\home_pic.jpg" />
+    <Content Include="Images\headers_pic\links_pic.jpg" />
+    <Content Include="Images\headers_pic\pictures_pic.jpg" />
+    <Content Include="Images\headers_pic\programs_pic.jpg" />
+    <Content Include="Images\headers_pic\video_pic.JPG" />
+    <Content Include="Scripts\ig\fonts\flexslider-icon.svg" />
+    <Content Include="Scripts\pictureScript.js" />
+    <Content Include="Scripts\youmax\jquery.youmax.min.js" />
+    <Content Include="Scripts\youmax\jquery\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\youmax\js\jquery.youmax.min.js" />
+    <Content Include="Scripts\youmax\js\source_packed\jquery.youmax.js" />
+    <Content Include="Scripts\youmax\js\source_unpacked\jquery.imagesloaded.js" />
+    <Content Include="Scripts\youmax\js\source_unpacked\jquery.wookmark.js" />
+    <Content Include="Scripts\youmax\js\source_unpacked\jquery.youmax.js" />
+    <Content Include="Scripts\youmax\js\source_unpacked\magnific_popup_iframe.js" />
+    <Content Include="config.xml" />
+    <Content Include="Content\bootstrap-rtl.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\hover-min.css" />
+    <Content Include="Content\myStyle.css" />
+    <Content Include="Content\SpaceLab.css" />
+    <Content Include="Global.asax" />
+    <Content Include="youmax\css\src\youmax_block.css" />
+    <Content Include="youmax\css\src\youmax_blue.css" />
+    <Content Include="youmax\css\src\youmax_clean.css" />
+    <Content Include="youmax\css\src\youmax_common.css" />
+    <Content Include="youmax\css\src\youmax_grey.css" />
+    <Content Include="youmax\css\src\youmax_list.css" />
+    <Content Include="youmax\css\src\youmax_trend.css" />
+    <Content Include="youmax\css\src\youmax_white.css" />
+    <Content Include="youmax\css\youmax_block.min.css" />
+    <Content Include="youmax\css\youmax_blue.min.css" />
+    <Content Include="youmax\css\youmax_clean.min.css" />
+    <Content Include="youmax\css\youmax_grey.min.css" />
+    <Content Include="youmax\css\youmax_list.min.css" />
+    <Content Include="youmax\css\youmax_trend.min.css" />
+    <Content Include="youmax\css\youmax_white.min.css" />
+    <Content Include="youmax\jquery\jquery-1.9.1.min.js" />
+    <Content Include="youmax\js\jquery.youmax.min.js" />
+    <Content Include="youmax\js\minified\imagesloaded.pkgd.min.js" />
+    <Content Include="youmax\js\minified\jquery.youmax.min.js" />
+    <Content Include="youmax\js\minified\magnific_popup_iframe_gallery.min.js" />
+    <Content Include="youmax\js\minified\masonry.pkgd.min.js" />
+    <Content Include="youmax\js\minified\share.min.js" />
+    <Content Include="youmax\js\source_unpacked\imagesloaded.pkgd.js" />
+    <Content Include="youmax\js\source_unpacked\jquery.youmax.js" />
+    <Content Include="youmax\js\source_unpacked\magnific_popup_iframe_gallery.js" />
+    <Content Include="youmax\js\source_unpacked\masonry.pkgd.js" />
+    <Content Include="youmax\js\source_unpacked\share.js" />
+    <Content Include="youmax\loader.js" />
+    <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
+    <Content Include="Images\juice_box_images\1.jpg" />
+    <Content Include="Images\juice_box_images\10.jpg" />
+    <Content Include="Images\juice_box_images\11.jpg" />
+    <Content Include="Images\juice_box_images\12.jpg" />
+    <Content Include="Images\juice_box_images\13.jpg" />
+    <Content Include="Images\juice_box_images\14.jpg" />
+    <Content Include="Images\juice_box_images\15.jpg" />
+    <Content Include="Images\juice_box_images\16.jpg" />
+    <Content Include="Images\juice_box_images\17.jpg" />
+    <Content Include="Images\juice_box_images\18.jpg" />
+    <Content Include="Images\juice_box_images\19.jpg" />
+    <Content Include="Images\juice_box_images\2.jpg" />
+    <Content Include="Images\juice_box_images\20.jpg" />
+    <Content Include="Images\juice_box_images\21.jpg" />
+    <Content Include="Images\juice_box_images\22.jpg" />
+    <Content Include="Images\juice_box_images\23.jpg" />
+    <Content Include="Images\juice_box_images\24.jpg" />
+    <Content Include="Images\juice_box_images\25.jpg" />
+    <Content Include="Images\juice_box_images\26.jpg" />
+    <Content Include="Images\juice_box_images\27.jpg" />
+    <Content Include="Images\juice_box_images\28.jpg" />
+    <Content Include="Images\juice_box_images\29.jpg" />
+    <Content Include="Images\juice_box_images\3.jpg" />
+    <Content Include="Images\juice_box_images\30.jpg" />
+    <Content Include="Images\juice_box_images\31.jpg" />
+    <Content Include="Images\juice_box_images\32.jpg" />
+    <Content Include="Images\juice_box_images\33.jpg" />
+    <Content Include="Images\juice_box_images\34.jpg" />
+    <Content Include="Images\juice_box_images\35.jpg" />
+    <Content Include="Images\juice_box_images\36.jpg" />
+    <Content Include="Images\juice_box_images\37.jpg" />
+    <Content Include="Images\juice_box_images\38.jpg" />
+    <Content Include="Images\juice_box_images\4.jpg" />
+    <Content Include="Images\juice_box_images\5.jpg" />
+    <Content Include="Images\juice_box_images\6.jpg" />
+    <Content Include="Images\juice_box_images\7.jpg" />
+    <Content Include="Images\juice_box_images\8.jpg" />
+    <Content Include="Images\juice_box_images\9.jpg" />
+    <Content Include="Images\juice_box_thumbs\1.jpg" />
+    <Content Include="Images\juice_box_thumbs\10.jpg" />
+    <Content Include="Images\juice_box_thumbs\11.jpg" />
+    <Content Include="Images\juice_box_thumbs\12.jpg" />
+    <Content Include="Images\juice_box_thumbs\13.jpg" />
+    <Content Include="Images\juice_box_thumbs\14.jpg" />
+    <Content Include="Images\juice_box_thumbs\15.jpg" />
+    <Content Include="Images\juice_box_thumbs\16.jpg" />
+    <Content Include="Images\juice_box_thumbs\17.jpg" />
+    <Content Include="Images\juice_box_thumbs\18.jpg" />
+    <Content Include="Images\juice_box_thumbs\19.jpg" />
+    <Content Include="Images\juice_box_thumbs\2.jpg" />
+    <Content Include="Images\juice_box_thumbs\20.jpg" />
+    <Content Include="Images\juice_box_thumbs\21.jpg" />
+    <Content Include="Images\juice_box_thumbs\22.jpg" />
+    <Content Include="Images\juice_box_thumbs\23.jpg" />
+    <Content Include="Images\juice_box_thumbs\24.jpg" />
+    <Content Include="Images\juice_box_thumbs\25.jpg" />
+    <Content Include="Images\juice_box_thumbs\26.jpg" />
+    <Content Include="Images\juice_box_thumbs\27.jpg" />
+    <Content Include="Images\juice_box_thumbs\28.jpg" />
+    <Content Include="Images\juice_box_thumbs\29.jpg" />
+    <Content Include="Images\juice_box_thumbs\3.jpg" />
+    <Content Include="Images\juice_box_thumbs\30.jpg" />
+    <Content Include="Images\juice_box_thumbs\31.jpg" />
+    <Content Include="Images\juice_box_thumbs\32.jpg" />
+    <Content Include="Images\juice_box_thumbs\33.jpg" />
+    <Content Include="Images\juice_box_thumbs\34.jpg" />
+    <Content Include="Images\juice_box_thumbs\35.jpg" />
+    <Content Include="Images\juice_box_thumbs\36.jpg" />
+    <Content Include="Images\juice_box_thumbs\37.jpg" />
+    <Content Include="Images\juice_box_thumbs\38.jpg" />
+    <Content Include="Images\juice_box_thumbs\4.jpg" />
+    <Content Include="Images\juice_box_thumbs\5.jpg" />
+    <Content Include="Images\juice_box_thumbs\6.jpg" />
+    <Content Include="Images\juice_box_thumbs\7.jpg" />
+    <Content Include="Images\juice_box_thumbs\8.jpg" />
+    <Content Include="Images\juice_box_thumbs\9.jpg" />
+    <Content Include="Scripts\affix.js" />
+    <Content Include="Scripts\alert.js" />
+    <Content Include="Scripts\bootstrap-rtl.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\button.js" />
+    <Content Include="Scripts\carousel-rtl.js" />
+    <Content Include="Scripts\collapse.js" />
+    <Content Include="Scripts\dropdown.js" />
+    <Content Include="Scripts\generalScripts.js" />
+    <Content Include="Scripts\homeScripts.js" />
+    <Content Include="Scripts\ig\jbcore\classic\fonts\juicebox.svg" />
+    <Content Include="Scripts\ig\jbcore\classic\img\jb001.png" />
+    <Content Include="Scripts\ig\jbcore\classic\img\spinner.gif" />
+    <Content Include="Scripts\ig\jbcore\classic\theme.css" />
+    <Content Include="Scripts\ig\jbcore\full.html" />
+    <Content Include="Scripts\ig\jbcore\juicebox.js" />
+    <Content Include="Scripts\imagesGallery.js" />
+    <Content Include="Scripts\ig\jbcore\classic\fonts\juicebox.eot" />
+    <Content Include="Scripts\ig\jbcore\classic\fonts\juicebox.ttf" />
+    <Content Include="Scripts\ig\jbcore\classic\fonts\juicebox.woff" />
+    <Content Include="Scripts\ig\fonts\flexslider-icon.eot" />
+    <Content Include="Scripts\ig\fonts\flexslider-icon.ttf" />
+    <Content Include="Scripts\ig\fonts\flexslider-icon.woff" />
+    <None Include="Properties\PublishProfiles\noyaschleienweb.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modal.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\myScripts.js" />
+    <Content Include="Scripts\popover.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\scrollspy.js" />
+    <Content Include="Scripts\tab.js" />
+    <Content Include="Scripts\tooltip.js" />
+    <Content Include="Scripts\transition.js" />
+    <Content Include="Scripts\youmax.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Views\Account\Logon.cshtml" />
+    <Content Include="Views\Biography\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Links\Index.cshtml" />
+    <Content Include="Views\ManageBiography\Create.cshtml" />
+    <Content Include="Views\ManageBiography\Delete.cshtml" />
+    <Content Include="Views\ManageBiography\Details.cshtml" />
+    <Content Include="Views\ManageBiography\Edit.cshtml" />
+    <Content Include="Views\ManageBiography\Index.cshtml" />
+    <Content Include="Views\ManageCalendarEvents\Create.cshtml" />
+    <Content Include="Views\ManageCalendarEvents\Delete.cshtml" />
+    <Content Include="Views\ManageCalendarEvents\Details.cshtml" />
+    <Content Include="Views\ManageCalendarEvents\Edit.cshtml" />
+    <Content Include="Views\ManageCalendarEvents\Index.cshtml" />
+    <Content Include="Views\ManageHotUpdates\Create.cshtml" />
+    <Content Include="Views\ManageHotUpdates\Delete.cshtml" />
+    <Content Include="Views\ManageHotUpdates\Details.cshtml" />
+    <Content Include="Views\ManageHotUpdates\Edit.cshtml" />
+    <Content Include="Views\ManageHotUpdates\Index.cshtml" />
+    <Content Include="Views\ManageImagesGallery\Create.cshtml" />
+    <Content Include="Views\ManageImagesGallery\Delete.cshtml" />
+    <Content Include="Views\ManageImagesGallery\Details.cshtml" />
+    <Content Include="Views\ManageImagesGallery\Edit.cshtml" />
+    <Content Include="Views\ManageImagesGallery\Index.cshtml" />
+    <Content Include="Views\ManageLinks\Create.cshtml" />
+    <Content Include="Views\ManageLinks\Delete.cshtml" />
+    <Content Include="Views\ManageLinks\Details.cshtml" />
+    <Content Include="Views\ManageLinks\Edit.cshtml" />
+    <Content Include="Views\ManageLinks\Index.cshtml" />
+    <Content Include="Views\ManagePressReviews\Create.cshtml" />
+    <Content Include="Views\ManagePressReviews\Delete.cshtml" />
+    <Content Include="Views\ManagePressReviews\Details.cshtml" />
+    <Content Include="Views\ManagePressReviews\Edit.cshtml" />
+    <Content Include="Views\ManagePressReviews\Index.cshtml" />
+    <Content Include="Views\ManagePrograms\Create.cshtml" />
+    <Content Include="Views\ManagePrograms\Delete.cshtml" />
+    <Content Include="Views\ManagePrograms\Details.cshtml" />
+    <Content Include="Views\ManagePrograms\Edit.cshtml" />
+    <Content Include="Views\ManagePrograms\Index.cshtml" />
+    <Content Include="Scripts\ig\flexslider.css" />
+    <Content Include="Views\Pictures\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Scripts\ig\jquery.flexslider-min.js" />
+    <Content Include="Scripts\ig\js\demo.js" />
+    <Content Include="Scripts\ig\js\froogaloop.js" />
+    <Content Include="Scripts\ig\js\jquery.easing.js" />
+    <Content Include="Scripts\ig\js\jquery.fitvid.js" />
+    <Content Include="Scripts\ig\js\jquery.mousewheel.js" />
+    <Content Include="Scripts\ig\js\modernizr.js" />
+    <Content Include="Scripts\ig\js\shBrushCss.js" />
+    <Content Include="Scripts\ig\js\shBrushJScript.js" />
+    <Content Include="Scripts\ig\js\shBrushXml.js" />
+    <Content Include="Scripts\ig\js\shCore.js" />
+    <Content Include="Views\Shared\_Layout.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_LayoutManage.cshtml" />
+    <Content Include="Views\Programs\Index.cshtml" />
+    <Content Include="Views\Videos\Index.cshtml" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <EntityDeploy Include="WebDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WebDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="WebDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WebDB.edmx</DependentUpon>
+      <LastGenOutput>WebDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebDB.edmx.diagram">
+      <DependentUpon>WebDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="WebDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WebDB.edmx</DependentUpon>
+      <LastGenOutput>WebDB.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Contact\Confirmation.cshtml" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="youmax\json\searchlist.json" />
+    <Content Include="youmax\json\translation.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarEvent.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\LinksController.cs" />
+    <Compile Include="Controllers\ManageBiographyController.cs" />
+    <Compile Include="Controllers\ManageCalendarEventsController.cs" />
+    <Compile Include="Controllers\ManageHotUpdatesController.cs" />
+    <Compile Include="Controllers\ManageImagesGalleryController.cs" />
+    <Compile Include="Controllers\ManageLinksController.cs" />
+    <Compile Include="Controllers\ManagePressReviewsController.cs" />
+    <Compile Include="Controllers\ManageProgramsController.cs" />
+    <Compile Include="Controllers\ProgramsController.cs" />
+    <Compile Include="CV.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\BaseController.cs" />
+    <Compile Include="Controllers\BiographyController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PicturesController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
+    <Compile Include="EntitiesEX\ImagesGallery.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CultureController.cs" />
+    <Compile Include="Helpers\CultureHelper.cs" />
+    <Compile Include="Helpers\DBHelper.cs" />
+    <Compile Include="HotUpdate.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImagesGallery.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Link.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EventItem.cs" />
+    <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\Picture.cs" />
+    <Compile Include="PressReview.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDB.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\Culture\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{de41214c-e19d-4423-b8e9-d52d2005ca9d}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1287</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1288/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

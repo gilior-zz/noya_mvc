@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="@Helpers.CultureHelper.GetCurrentNeutralCulture()" dir="@(Helpers.CultureHelper.IsRighToLeft() ? "rtl":"ltr")">
+@using StackExchange.Profiling;
+@{
+    bool heb = Helpers.CultureHelper.IsRighToLeft();
+    string fl = heb ? "float:left" : "float:right";
+    string lf = heb ? "float:right" : "float:left";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;" />
+    <title>Noya Schleien| @ViewBag.Title</title>
+    <meta name="description" content="Marimba & Percussion artist, Noya Schleien. @ViewBag.Title Noya." />
+
+    @*<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>*@
+    @{
+        if (heb)
+        {
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+            <link href="http://res.cloudinary.com/lior/raw/upload/v1426274298/bootstrap-rtl.css" rel="stylesheet">
+        }
+        else
+        {
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        }
+    }
+
+
+
+    @* @System.Web.Optimization.Styles.Render("~/Content/css")*@
+    @*<link href="~/Content/myStyle.css" rel="stylesheet" />*@
+
+    @RenderSection("head", false)
+</head>
+<body>
+
+    <div class="container body-content">
+        <div style="color: white; -moz-border-radius: 20px; -webkit-border-radius:20px; border-radius:20px"></div>
+
+        <div style="background-image: url('../Images/headers_pic/@(ViewBag.ImageName+".jpg")');" id="bg">
+            <div class="rotatorTextName">@Resources.NoyaSchleien</div>
+            <div class="rotatorTextTitle">@Resources.Title</div>
+        </div>
+        @*<div id="bg">
+                     <div class="jumbotron well alert alert-danger" style="font-family: 'Rock Salt', cursive; text-align: center;margin-bottom:0px " id="logo">@Resources.NoyaSchleien</div>
+            </div>*@
+
+        <div dir="ltr" class="btn-group-sm">
+            @Html.ActionLink("Eng", "SetCulture", "Culture", new { culture = "en", url = @Request.Url }, new { @class = "langLinks" })
+            @Html.ActionLink("עברית", "SetCulture", "Culture", new { culture = "he", url = @Request.Url }, new { @class = "langLinks" })
+
+
+        </div>
+        @*<script>
+                $("#langLinks").click(function () {
+
+                    var aaa = @Url.Action("Culture", "SetCulture");
+                    var culture = $(this).attr("data-culture");
+                    var returnUrl = $(location).attr('href');
+                    $.get(url, { culture: culture, url: returnUrl });
+                });
+            </script>*@
+        <div class="navbar navbar-default" style="">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" style="@lf" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span style="font-weight: 900; color: white">@Resources.Menu</span>
+                    </button>
+                    <h4 class="navMenu hidden-lg hidden-md hidden-sm mobliePath">
+                        <span>@Resources.NoyaSchleien</span>
+                        <span>|</span>
+                        <span>@ViewBag.Title</span>
+
+                    </h4>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="menu-ul nav nav-pills nav-justified ">
+                        <li class="menuItem">@Html.ActionLink(@Resources.Home, "Index", "Home", null, new { @class = "Home" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Biography, "Index", "Biography", null, new { @class = "Biography" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Pictures, "Index", "Pictures", null, new { @class = "Pictures" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Videos, "Index", "Videos", null, new { @class = "Videos" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Programs, "Index", "Programs", null, new { @class = "Programs" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Links, "Index", "Links", null, new { @class = "Links" })</li>
+                        <li class="menuItem">@Html.ActionLink(@Resources.Contact, "Index", "Contact", null, new { @class = "Contact" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+        <footer class="row">
+            @*<hr id="hrFooter" />*@
+            <div class="footerItems container-fluid">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-mail">noyaschleien@gmail.com</div>
+                    @*  @Html.ActionLink(@Resources.PressHere, "Index", "Contact", null, new { @class = "", })*@
+
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 footerBtnWrapper">
+                    @Html.ActionLink(@Resources.OrderConcert, "Index", "Contact", null, new { @class = "footer-btn btn btn-primary" })
+
+                </div>
+            </div>
+        </footer>
+        <hr class="logoHR" />
+        <p class="credits">© Noya Schleien 2013 | Developed by @Html.ActionLink("Future WebSites", "Index", "Home", null, new { @class = "logo" }) </p>
+
+    </div>
+    @*@System.Web.Optimization.Scripts.Render("~/bundles/scripts")
+        @System.Web.Optimization.Scripts.Render("~/bundles/scripts2")*@
+
+    <link href="http://res.cloudinary.com/lior/raw/upload/v1434702706/myStyle.css" rel="stylesheet">
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426274620/jquery-2.1.1.min.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426275106/generalScripts.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426275184/jquery.validate.min.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426276612/jquery.validate.unobtrusive.min.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426272830/bootstrap.min.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277132/respond.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277180/myScripts.js"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1434701988/bootstrap-rtl.css"></script>
+    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277468/homeScripts.js"></script>
+
+    <script src="~/youmax/js/jquery.youmax.min.js"></script>
+    <link href="youmax/css/youmax_trend.min.css" rel="stylesheet" />
+    @RenderSection("scripts", required: false)>
+</body>
+</html>

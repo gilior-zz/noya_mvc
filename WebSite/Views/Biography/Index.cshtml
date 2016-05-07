@@ -1,0 +1,18 @@
+﻿@model string
+
+@{
+    ViewBag.Title = Resources.Biography;
+    ViewBag.ImageName = "cv_pic";
+}
+
+<div  class="panel panel-default">
+  
+    <div class="panel-body">
+        <div class="pagesInnerHeader">@Resources.Biography</div>
+        @Html.Raw(Model)
+
+       
+    </div>
+
+
+</div>

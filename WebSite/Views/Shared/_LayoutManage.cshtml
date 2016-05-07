@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title|Noya Schleien</title>
+    <meta name="description" content="Marimba & Percussion artist, Noya Schleien. @ViewBag.Title Noya." />
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    @System.Web.Optimization.Styles.Render("~/Content/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/SpaceLab.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+
+    <div class="container body-content">
+
+        <div class="jumbotron well alert alert-danger" style="font-family: 'Rock Salt', cursive; text-align: center; " id="logo">NOYA SCHLEIEN</div>
+        <div class="navbar navbar-inverse " style="align-content:center;text-justify:auto;text-align:center">
+            <div class=" container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @*  @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })*@
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav nav-pills nav-justified ">
+
+                        <li>@Html.ActionLink("Biography", "Index", "ManageBiography")</li>
+                        <li>@Html.ActionLink("Manage Hot Updates", "Index", "ManageHotUpdates")</li>
+                        <li>@Html.ActionLink("Pictures", "Index", "ManageImagesGallery")</li>
+                        <li>@Html.ActionLink("Programs", "Index", "ManagePrograms")</li>
+                        <li>@Html.ActionLink("Links", "Index", "ManageLinks")</li>
+                        <li>@Html.ActionLink("PressReviews", "Index", "ManagePressReviews")</li>
+                        <li>@Html.ActionLink("CalendarEvents", "Index", "ManageCalendarEvents")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+       
+        <footer></footer>
+    </div>
+
+
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

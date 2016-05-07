@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ImagesGallery>
+
+@{
+    ViewBag.Title = Resources.Pictures;
+    ViewBag.ImageName = "pictures_pic";
+}
+@section head{
+
+    <script src="~/Scripts/ig/jbcore/juicebox.js"></script>
+    <script src="~/Scripts/pictureScript.js"></script>
+}
+<!--START JUICEBOX EMBED-->
+@section scripts{
+    <script>
+        var jb = new juicebox({
+            containerId: "juicebox-container",
+            galleryWidth: "100%",
+            galleryHeight: "100%;",
+            showExpandButton: false,
+            configUrl: "config.xml",
+        });
+
+    </script>
+
+}
+
+<div id="juicebox-container"></div>
+<!--END JUICEBOX EMBED-->

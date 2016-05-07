@@ -1,0 +1,94 @@
+﻿@model Message
+@{
+    ViewBag.Title = Resources.Contact;
+    ViewBag.ImageName = "contact_pic";
+}
+
+<div class="panel panel-default">
+    @*  <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">Contact</h3>
+        </div>*@
+    <div class="contact panel-body">
+        <div class="pagesInnerHeader">@Resources.Contact</div>
+        @using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <div class="form-group ">
+                @Html.LabelFor(m => m.SenderName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.SenderName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.SenderName)
+                </div>
+            </div>
+            <div class="form-group ">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+            </div>
+            <div class="form-group ">
+                @Html.LabelFor(m => m.Content, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.Content, new { @class = "form-control", rows = "3" })
+                    @Html.ValidationMessageFor(m => m.Content)
+                </div>
+            </div>
+            @*<div class="form-group ">
+                    <div class="col-xs-offset-2">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.Notifications)
+                            @Html.LabelFor(m => m.Notifications)
+                        </div>
+                    </div>
+                </div>*@
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="@Resources.SendToNoya" class="btn btn-default" />
+                </div>
+            </div>
+        }
+    </div>
+
+
+</div>
+@*<div id="confirmation-window" class="confirmation">
+        <div class="pagesInnerHeader">@Resources.Confirmation</div>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+            @Html.ActionLink(@Resources.ContinueBrowse, "Index", "Home", null, new { @class = " btn btn-primary", @style = "font-weight:bold;" })
+
+            @Html.ActionLink(@Resources.AnotherMessage, "Index", "Contact", null, new { @class = "btn btn-primary", @style = "font-weight:bold;" })
+
+        </div>
+    </div>*@
+@*<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+@*@section scripts{
+    <script>
+      @{
+        var ok = Model != null && Model.OKMsg;
+        if (ok)
+        {
+            <text>
+        $('#myModal').modal('toggle')
+        </text>
+        }
+    }
+    </script>
+}*@
+
+
+

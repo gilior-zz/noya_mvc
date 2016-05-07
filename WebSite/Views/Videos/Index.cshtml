@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = Resources.Videos;
+    ViewBag.ImageName = "video_pic";
+}
+
+
+@*<div class="panel panel-default">
+    <div class="panel-heading">*@
+@*  <h3 class="panel-title" style="text-align:center">Videos</h3>*@
+@*</div>*@
+@*<div class="panel-body">*@
+
+<div class="panel panel-default">
+
+    <div class="panel-body">
+
+        <div class="pagesInnerHeader">@Resources.Videos</div>
+        <div class="videos" id="youmax">
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+@*</div>*@
+
+
+@*</div>*@
+@section scripts{
+
+    @*<script>
+            youTubeChannelURL = 'http://www.youtube.com/user/noyaschleien';
+
+            youmaxDefaultTab = 'Uploads';
+            youmaxColumns = 4;
+            youmaxWidgetWidth = 900;
+            youmaxWidgetHeight = "";
+            showFeaturedVideoOnLoad = false;
+            showVideoInLightbox = false;
+            $('.youmax-custom-style').remove();
+            $('html > head').append('<style class="youmax-custom-style">    </style>');
+            $('#youmax').empty().append(' loading ...');
+            youmaxFeaturedPlaylistId = null;
+            prepareYoumax();
+            $(window).load(function () { $('#youmax-header>img').wrap('<a href="' + youTubeChannelURL + '" target="_blank" />'); });
+        </script>*@
+    <script>
+
+        var options = {
+            apiKey: "AIzaSyCveFKo8nQBAsJtrTyotXVx2wxqg5rHDBY",
+            clientId: "32210824715-6kkbgjdro3468agc4e66erp7llv3kf8n.apps.googleusercontent.com",
+            channel: "https://www.youtube.com/user/noyaschleien",
+            youtube_channel_uploads: [
+                {
+                    name: "",
+                    url: "https://www.youtube.com/user/noyaschleien",
+                    selected: true
+                },
+            ],
+
+            autoPlayVideo: true,
+            displayFirstVideoOnLoad: true,
+            autoLoadComments: true,
+            hideNavigation: true,
+        };
+        $("#youmax").youmax(options)
+
+        //$("#youmax").youmax({ apiKey: "AIzaSyCveFKo8nQBAsJtrTyotXVx2wxqg5rHDBY", clientId: "32210824715-6kkbgjdro3468agc4e66erp7llv3kf8n.apps.googleusercontent.com", channel: "https://www.youtube.com/channel/UC-1--G7JCO2F9mjB_6tYqAw", playList: ["https://www.youtube.com/playlist?list=PLLQUvMec8EN6Mo5ZRJq8N_xjT3PQJ5H4u"], searchTab: [], selectedTab: "p1", displayVideo: "popup", alwaysUseDropdown: false, autoPlayVideo: true, displayFirstVideoOnLoad: false, skin: "white", searchBoxScope: "global", linkNewPages: false, autoLoadComments: false, featuredVideo: "", maxResults: 18, innerOffset: 40, outerOffset: 40, minItemWidth: 250, maxItemWidth: 400, maxContainerWidth: 1000 });
+
+
+        //$("#youmax").youmax({
+
+        //    apiKey: "AIzaSyCveFKo8nQBAsJtrTyotXVx2wxqg5rHDBY",
+        //    clientId: "32210824715-6kkbgjdro3468agc4e66erp7llv3kf8n.apps.googleusercontent.com",
+        //    youtube_channel_uploads: [
+        //      {
+        //          name: "Uploads",
+        //          url: "https://www.youtube.com/channel/UC-1--G7JCO2F9mjB_6tYqAw",
+        //          selected: true
+        //      },
+        //    ],
+
+        //    alwaysUseDropdown: false,
+        //    autoPlayVideo: true,
+        //    skin: "list1",
+        //    autoLoadComments: false,
+        //    widgetMode: false,
+        //    hideHeader: true,
+        //    hideNavigation: true,
+
+        //});
+    </script>
+}
+

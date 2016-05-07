@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = Resources.Confirmation;
+    ViewBag.ImageName = "contact_pic";
+
+}
+<div class="panel panel-default">
+    @*  <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">Contact</h3>
+        </div>*@
+    <div class="confirmation panel-body">
+        <div class="pagesInnerHeader">@Resources.Confirmation</div>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+            @Html.ActionLink(@Resources.ContinueBrowse, "Index", "Home", null, new { @class = " btn btn-primary", @style = "font-weight:bold;" })
+
+            @Html.ActionLink(@Resources.AnotherMessage, "Index", "Contact", null, new { @class = "btn btn-primary", @style = "font-weight:bold;" })
+
+        </div>
+    </div>
+
+
+</div>

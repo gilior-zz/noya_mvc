@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	showExpandButton="false"
+	useThumbDots="false"
+	showOpenButton="false"
+	showThumbsButton="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(34,34,34,1)"
+
+	
+
+>
+  <image imageURL="../Images/juice_box_images/1.jpg"
+thumbURL="../Images/juice_box_thumbs/1.jpg"
+linkURL="../Images/juice_box_images/1.jpg"
+linkTarget="_blank"
+sourcePath="C:\Users\lior\Desktop\12122014\1.jpg">
+    <title><![CDATA[1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/2.jpg"
+	thumbURL="../Images/juice_box_thumbs/2.jpg"
+	linkURL="../Images/juice_box_images/2.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\2.jpg">
+    <title><![CDATA[2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/3.jpg"
+	thumbURL="../Images/juice_box_thumbs/3.jpg"
+	linkURL="../Images/juice_box_images/3.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\3.jpg">
+    <title><![CDATA[3]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/4.jpg"
+	thumbURL="../Images/juice_box_thumbs/4.jpg"
+	linkURL="../Images/juice_box_images/4.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\4.jpg">
+    <title><![CDATA[4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/5.jpg"
+	thumbURL="../Images/juice_box_thumbs/5.jpg"
+	linkURL="../Images/juice_box_images/5.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\5.jpg">
+    <title><![CDATA[5]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/6.jpg"
+	thumbURL="../Images/juice_box_thumbs/6.jpg"
+	linkURL="../Images/juice_box_images/6.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\6.jpg">
+    <title><![CDATA[6]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/7.jpg"
+	thumbURL="../Images/juice_box_thumbs/7.jpg"
+	linkURL="../Images/juice_box_images/7.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\7.jpg">
+    <title><![CDATA[7]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/8.jpg"
+	thumbURL="../Images/juice_box_thumbs/8.jpg"
+	linkURL="../Images/juice_box_images/8.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\8.jpg">
+    <title><![CDATA[8]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/9.jpg"
+	thumbURL="../Images/juice_box_thumbs/9.jpg"
+	linkURL="../Images/juice_box_images/9.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\9.jpg">
+    <title><![CDATA[9]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/10.jpg"
+	thumbURL="../Images/juice_box_thumbs/10.jpg"
+	linkURL="../Images/juice_box_images/10.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\10.jpg">
+    <title><![CDATA[10]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/11.jpg"
+	thumbURL="../Images/juice_box_thumbs/11.jpg"
+	linkURL="../Images/juice_box_images/11.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\11.jpg">
+    <title><![CDATA[11]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/12.jpg"
+	thumbURL="../Images/juice_box_thumbs/12.jpg"
+	linkURL="../Images/juice_box_images/12.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\12.jpg">
+    <title><![CDATA[12]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/13.jpg"
+	thumbURL="../Images/juice_box_thumbs/13.jpg"
+	linkURL="../Images/juice_box_images/13.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\13.jpg">
+    <title><![CDATA[13]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/14.jpg"
+	thumbURL="../Images/juice_box_thumbs/14.jpg"
+	linkURL="../Images/juice_box_images/14.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\14.jpg">
+    <title><![CDATA[14]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/15.jpg"
+	thumbURL="../Images/juice_box_thumbs/15.jpg"
+	linkURL="../Images/juice_box_images/15.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\15.jpg">
+    <title><![CDATA[15]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/16.jpg"
+	thumbURL="../Images/juice_box_thumbs/16.jpg"
+	linkURL="../Images/juice_box_images/16.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\16.jpg">
+    <title><![CDATA[16]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/17.jpg"
+	thumbURL="../Images/juice_box_thumbs/17.jpg"
+	linkURL="../Images/juice_box_images/17.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\17.jpg">
+    <title><![CDATA[17]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/18.jpg"
+	thumbURL="../Images/juice_box_thumbs/18.jpg"
+	linkURL="../Images/juice_box_images/18.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\18.jpg">
+    <title><![CDATA[18]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/19.jpg"
+	thumbURL="../Images/juice_box_thumbs/19.jpg"
+	linkURL="../Images/juice_box_images/19.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\19.jpg">
+    <title><![CDATA[19]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/20.jpg"
+	thumbURL="../Images/juice_box_thumbs/20.jpg"
+	linkURL="../Images/juice_box_images/20.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\20.jpg">
+    <title><![CDATA[20]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/21.jpg"
+	thumbURL="../Images/juice_box_thumbs/21.jpg"
+	linkURL="../Images/juice_box_images/21.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\21.jpg">
+    <title><![CDATA[21]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/22.jpg"
+	thumbURL="../Images/juice_box_thumbs/22.jpg"
+	linkURL="../Images/juice_box_images/22.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\22.jpg">
+    <title><![CDATA[22]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/23.jpg"
+	thumbURL="../Images/juice_box_thumbs/23.jpg"
+	linkURL="../Images/juice_box_images/23.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\23.jpg">
+    <title><![CDATA[23]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/24.jpg"
+	thumbURL="../Images/juice_box_thumbs/24.jpg"
+	linkURL="../Images/juice_box_images/24.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\24.jpg">
+    <title><![CDATA[24]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/25.jpg"
+	thumbURL="../Images/juice_box_thumbs/25.jpg"
+	linkURL="../Images/juice_box_images/25.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\25.jpg">
+    <title><![CDATA[25]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/26.jpg"
+	thumbURL="../Images/juice_box_thumbs/26.jpg"
+	linkURL="../Images/juice_box_images/26.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\26.jpg">
+    <title><![CDATA[26]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/27.jpg"
+	thumbURL="../Images/juice_box_thumbs/27.jpg"
+	linkURL="../Images/juice_box_images/27.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\27.jpg">
+    <title><![CDATA[27]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/28.jpg"
+	thumbURL="../Images/juice_box_thumbs/28.jpg"
+	linkURL="../Images/juice_box_images/28.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\28.jpg">
+    <title><![CDATA[28]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/29.jpg"
+	thumbURL="../Images/juice_box_thumbs/29.jpg"
+	linkURL="../Images/juice_box_images/29.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\29.jpg">
+    <title><![CDATA[29]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/30.jpg"
+	thumbURL="../Images/juice_box_thumbs/30.jpg"
+	linkURL="../Images/juice_box_images/30.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\30.jpg">
+    <title><![CDATA[30]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/31.jpg"
+	thumbURL="../Images/juice_box_thumbs/31.jpg"
+	linkURL="../Images/juice_box_images/31.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\31.jpg">
+    <title><![CDATA[31]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/32.jpg"
+	thumbURL="../Images/juice_box_thumbs/32.jpg"
+	linkURL="../Images/juice_box_images/32.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\32.jpg">
+    <title><![CDATA[32]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/33.jpg"
+	thumbURL="../Images/juice_box_thumbs/33.jpg"
+	linkURL="../Images/juice_box_images/33.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\33.jpg">
+    <title><![CDATA[33]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/34.jpg"
+	thumbURL="../Images/juice_box_thumbs/34.jpg"
+	linkURL="../Images/juice_box_images/34.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\34.jpg">
+    <title><![CDATA[34]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/35.jpg"
+	thumbURL="../Images/juice_box_thumbs/35.jpg"
+	linkURL="../Images/juice_box_images/35.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\35.jpg">
+    <title><![CDATA[35]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/36.jpg"
+	thumbURL="../Images/juice_box_thumbs/36.jpg"
+	linkURL="../Images/juice_box_images/36.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\36.jpg">
+    <title><![CDATA[36]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/37.jpg"
+	thumbURL="../Images/juice_box_thumbs/37.jpg"
+	linkURL="../Images/juice_box_images/37.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\37.jpg">
+    <title><![CDATA[37]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="../Images/juice_box_images/38.jpg"
+	thumbURL="../Images/juice_box_thumbs/38.jpg"
+	linkURL="../Images/juice_box_images/38.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\lior\Desktop\12122014\38.jpg">
+    <title><![CDATA[38]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+
+</juiceboxgallery>

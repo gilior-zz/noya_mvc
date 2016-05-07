@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebSite.Link>
+
+@{
+    ViewBag.Title = Resources.Links;
+    ViewBag.ImageName = "links_pic";
+    bool heb = Helpers.CultureHelper.IsRighToLeft();
+}
+
+<!DOCTYPE html>
+
+@*<div class="panel panel-default">
+    <div class="panel-heading">*@
+@*  <h3 class="panel-title" style="text-align:center">Videos</h3>*@
+@*</div>*@
+@*<div class="panel-body">*@
+<div class="panel panel-default">
+
+    <div class="panel-body">
+        <div class="pagesInnerHeader">@Resources.Links</div>
+
+
+
+        @foreach (var item in Model)
+        {
+            <div class="linksWrapper"><a target="_blank" href="@( heb ? item.Address_Heb : item.Address_Eng)">@( heb ? item.Text_Heb : item.Text_Eng)</a></div>
+
+        }
+    </div>
+
+</div>

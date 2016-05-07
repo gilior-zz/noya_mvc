@@ -1,0 +1,87 @@
+﻿@model WebSite.Models.HomeModel
+@{
+    ViewBag.Title = Resources.Home;
+    ViewBag.ImageName = "home_pic";
+    bool heb = @Helpers.CultureHelper.IsRighToLeft();
+    string borderParams = "thin solid #417ba3";
+    string border = heb ? "border-right:" + borderParams + "" : "border-left:" + borderParams + "";
+}
+
+
+<div  class="panel panel-default">
+    @* <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">HOME</h3>
+        </div>*@
+    <div class="panel-body">
+        <div class="pagesInnerHeader">@Resources.Welcome</div>
+        @* <img style="max-width:100%" src="~/Images/home.png" />*@
+        <div id="homeBottomConainer" class="container-fluid">
+            <div id="homeConcertsWrapper" class="panel  col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div id="homeConcerts" class="pagesInnerHeader">@Resources.Concerts</div>
+                <div id="panelHead" class="panel-heading">
+                    <span id="calendarDate"></span>
+                    <span id="nextNav" onclick="eventManager.getNextItem(@heb.ToString().ToLowerInvariant());" class="glyphicon glyphicon-forward">
+                    </span>
+                    <span id="prevNav" onclick="eventManager.getPrevItem(@heb.ToString().ToLowerInvariant());" class="glyphicon glyphicon-backward"></span>
+                </div>
+                <div style='direction:@(heb?"ltr":"rtl");' id="calendarData" class="panel-body">
+                </div>
+
+            </div>
+
+            <div id="homePostsWrapper" class="panel  col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div id="homePosts" class="pagesInnerHeader">@Resources.Posts</div>
+                <div style='direction:@(heb?"ltr":"rtl");' id="postsData" class="panel-body">
+                    @Html.Raw(Model.Posts)
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div id="homeUpperConainer" class="container-fluid">
+            <div id="homeImage" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img style="align-content:center" width="100%" height="auto" src="http://res.cloudinary.com/lior/image/upload/v1425590917/head_pic.jpg" />
+
+            </div>
+
+            <div id="homePress" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="pagesInnerHeader">@Resources.Press</div>
+                @Html.Raw(Model.Press)
+            </div>
+        </div>
+
+
+    </div>
+
+    @*<div  class="col-xs-12 col-sm-6 col-md-6 col-lg-6 container-fluid">
+            <div >
+                <span class="" id="calendarDate"></span>
+                <span onclick="eventManager.getNextItem();" style="float:right;cursor:pointer" class="glyphicon glyphicon-forward"></span>
+                <span onclick="eventManager.getPrevItem();" style="float: left; cursor: pointer" class=" glyphicon glyphicon-backward"></span>
+            </div>
+            <div  id="calendarData">
+
+            </div>
+        </div>*@
+
+
+
+
+</div>
+
+@section scripts{
+<script>
+    eventManager.getCurrentItem(@heb.ToString().ToLowerInvariant())
+    //postsManager.getPosts()
+</script>
+
+}
+
+
