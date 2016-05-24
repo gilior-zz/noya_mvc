@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="App_Code\GlyphIcon.cshtml" />
     <Content Include="Content\youmax\youmax_white.min.css" />
+    <Content Include="Images\bitbit.jpg" />
     <Content Include="Images\headers_pic\contact_pic.jpg" />
     <Content Include="Images\headers_pic\cv_pic.jpg" />
     <Content Include="Images\headers_pic\head_pic.jpg" />
