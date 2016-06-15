@@ -7,7 +7,9 @@ using System.Web.Routing;
 using System.Web.Optimization;
 using StackExchange.Profiling;
 using StackExchange.Profiling.EntityFramework6;
-
+using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace WebSite
 {
@@ -25,6 +27,15 @@ namespace WebSite
             //MiniProfilerEF6.Initialize();
 
             //MiniProfiler.Settings.Results_List_Authorize = (i) => { return true; };
+        }
+        protected void Session_Start()
+        {
+            var v = Server.MapPath("~/config.xml");
+            var vv = File.ReadAllText(v);
+            XDocument doc = XDocument.Load(v);
+         
+            var vvv = doc.Descendants("image");
+            vvv.Remove();
         }
         //protected void Application_BeginRequest()
         //{

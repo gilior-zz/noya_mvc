@@ -17,7 +17,8 @@
         if (heb)
         {
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-            <link href="http://res.cloudinary.com/lior/raw/upload/v1426274298/bootstrap-rtl.css" rel="stylesheet">
+
+            <link href="~/Content/bootstrap-rtl.css" rel="stylesheet" />
         }
         else
         {
@@ -111,17 +112,16 @@
     @*@System.Web.Optimization.Scripts.Render("~/bundles/scripts")
         @System.Web.Optimization.Scripts.Render("~/bundles/scripts2")*@
 
-    <link href="http://res.cloudinary.com/lior/raw/upload/v1434702706/myStyle.css" rel="stylesheet">
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426274620/jquery-2.1.1.min.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426275106/generalScripts.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426275184/jquery.validate.min.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426276612/jquery.validate.unobtrusive.min.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426272830/bootstrap.min.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277132/respond.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277180/myScripts.js"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1434701988/bootstrap-rtl.css"></script>
-    <script src="http://res.cloudinary.com/lior/raw/upload/v1426277468/homeScripts.js"></script>
-
+    <link href="~/Content/myStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/generalScripts.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/myScripts.js"></script>
+   @* <link href="~/Content/bootstrap-rtl.css" rel="stylesheet" />*@
+    <script src="~/Scripts/homeScripts.js"></script>
     <script src="~/youmax/js/jquery.youmax.min.js"></script>
     <link href="youmax/css/youmax_trend.min.css" rel="stylesheet" />
     @RenderSection("scripts", required: false)>

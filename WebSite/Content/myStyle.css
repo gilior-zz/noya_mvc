@@ -136,10 +136,6 @@
     }
 
     .linksWrapper a:nth-child(2n):hover {
-        -moz-transform: scale(1.05) rotate(1deg);
-        -ms-transform: scale(1.05) rotate(1deg);
-        -o-transform: scale(1.05) rotate(1deg);
-        -webkit-transform: scale(1.05) rotate(1deg);
         transform: scale(1.05) rotate(1deg);
     }
 
@@ -414,14 +410,10 @@ hr.style-seven {
     display: none;
 }
 
+.youmax-stat-count {
+    content: '110';
+}
+
 #youmax-load-more-div {
     display: none;
-}
-
-#youmax-stat-holder {
-    display: none !important;
-}
-
-.subscribed::after {
-    content: '70';
 }

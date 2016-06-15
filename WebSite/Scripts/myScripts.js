@@ -6,5 +6,4 @@
         'font-size': 'larger',
         'background-color': 'rgba(132, 200, 248, 0.40)'
     });
-    alert("DFdf");
 });
